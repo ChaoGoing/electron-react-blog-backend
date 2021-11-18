@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "rootDir": "./src",
+        "baseUrl": ".",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "allowJs": false,
+        "noUnusedLocals": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types"],
+        "jsx": "react",
+        "noUnusedParameters": false
+    },
+    "include": ["./src/typings", "src/common/**/*"]
+}

@@ -1,8 +1,8 @@
-const baseConf = require("./.eslintrc.js");
+const baseConf = require('./.eslintrc.js')
 
 module.exports = {
   ...baseConf,
-  // parserOptions: {
-  //     project: './src/main/tsconfig.json'
-  // }
-};
+  parserOptions: {
+    project: './src/main/tsconfig.json'
+  }
+}

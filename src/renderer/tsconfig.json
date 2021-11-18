@@ -1,0 +1,36 @@
+{
+    "extends": "./../../tsconfig.json",
+    "compilerOptions": {
+        "target": "es6",
+        "rootDir": "./../../",
+        "baseUrl": "./",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "alwaysStrict": true,
+        "allowJs": false,
+        "noUnusedLocals": true,
+        "typeRoots": ["./../typings", "./typings", "./../../node_modules/@types"],
+        "paths": {
+            "@assets/*": ["assets/*"],
+            "@utils/*": ["utils/*"],
+            "@components/*": ["components/*"],
+            "@store/*": ["store/*"],
+            "@worker/*": ["worker/*"],
+            "@config/*": ["config/*"],
+            "@common/*": ["../common/*"],
+            "@constant/*": ["../constant/*"],
+        },
+        "jsx": "react",
+        "lib": ["dom"],
+        "skipLibCheck": true,
+        "composite": true
+    },
+    "include": ["../typings", "./**/*", "./../common/**/*"],
+    "files": ["./index.tsx"]
+}

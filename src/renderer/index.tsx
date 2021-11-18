@@ -9,13 +9,11 @@ import ReactDOM from 'react-dom'
 // import moment from 'moment'
 // import 'moment/locale/zh-cn'
 
-import App  from './App.tsx'
+import App from './App'
 
 const render = () => {
-    const element = (
-        <App />
-    )
-    ReactDOM.render(element, document.getElementById('app'))
+  const element = <App />
+  ReactDOM.render(element, document.getElementById('app'))
 }
 
 render()
