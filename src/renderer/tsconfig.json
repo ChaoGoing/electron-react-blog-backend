@@ -14,7 +14,6 @@
         "esModuleInterop": true,
         "alwaysStrict": true,
         "allowJs": false,
-        "noUnusedLocals": true,
         "typeRoots": ["./../typings", "./typings", "./../../node_modules/@types"],
         "paths": {
             "@assets/*": ["assets/*"],
@@ -29,7 +28,9 @@
         "jsx": "react",
         "lib": ["dom"],
         "skipLibCheck": true,
-        "composite": true
+        "composite": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false
     },
     "include": ["../typings", "./**/*", "./../common/**/*"],
     "files": ["./index.tsx"]
